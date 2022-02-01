@@ -9,15 +9,14 @@ import { FormsModule } from '@angular/forms';
 import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
-  declarations: [
-    AppComponent, GalleryComponent],
+  declarations: [AppComponent, GalleryComponent],
   imports: [
-    StoreModule.forRoot({gallery: galleryReducer}),
+    StoreModule.forRoot({ gallery: galleryReducer }),
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [GalleryService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
